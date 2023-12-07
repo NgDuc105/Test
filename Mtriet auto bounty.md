@@ -1,7 +1,7 @@
 getgenv().Config = {
-    ["Team"] = "Pirates", --// Auto Choose Team
+    ["Team"] = "Pirates", --// Marines, Pirates
     ["Webhook"] = {
-        ["Enable"] = false, --// Enable Webhook
+        ["Enable"] = false, --// Enable if you have Webhook Url
         ["Url"] = "" --// Your webhook url
     },
     ["Skip"] = {
@@ -15,9 +15,8 @@ getgenv().Config = {
     },
     ["Chat"] = {
         ["Enable"] = false, --// Enable Chat
-        ["Content"] = {"Mtriet Hub V2 hello"} --// Content
+        ["Content"] = {"Hello me use MTriet Hub Auto Bounty"} --// Content
     },
-    --// Copy Next
     ["Misc"] = {
         ["Hide If Low Health"] = true, --// Run
         ["Hide Health"] = {4000,5000}, --// Health for run
@@ -26,8 +25,9 @@ getgenv().Config = {
         ["White Screen"] = false, --// White Screen
         ["Bypass TP"] = true, --// Bypass TP 1 -> 2 hit
         ["Spam All Skill On V4"] = true, --// If you have v4, warn: change your weapon setting
-        ["Gun Method"] = true --// Enable if you use gun
+        ["Gun Method"] = false --// Enable if you use gun
     },
+    --// Copy Next
     ["Weapons"] = {
         ["Melee"] = {
             ["Enable"] = true,
@@ -39,7 +39,6 @@ getgenv().Config = {
                 ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
             }
         },
-        --// Copy Next
         ["Blox Fruit"] = {
             ["Enable"] = false,
             ["Delay"] = 3,
@@ -51,6 +50,7 @@ getgenv().Config = {
                 ["F"] = {["Enable"] = false, ["HoldTime"] = 0}
             }
         },
+        --// Copy Next
         ["Sword"] = {
             ["Enable"] = true,
             ["Delay"] = 1.5,
@@ -59,7 +59,6 @@ getgenv().Config = {
                 ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
             } 
         },      
-        --// Copy Next
         ["Gun"] = {
             ["Enable"] = true,
             ["Delay"] = 1.2,
@@ -70,4 +69,5 @@ getgenv().Config = {
         }
     }
 }
+repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Hunt/main/AutoBountyV2.lua"))()
