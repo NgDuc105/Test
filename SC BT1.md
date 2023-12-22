@@ -1,6 +1,6 @@
 repeat wait()
 until game:IsLoaded()
-local TableChat = {""}
+local TableChat = {"Hacker Nguu","Hacker Cho'"}
 spawn(function()
     while wait() do 
         pcall(function()
